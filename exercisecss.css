@@ -1,0 +1,203 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#landing-page {
+  background-image: url(./marek-studzinski-TEZLseYfyz0-unsplash.jpg);
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+}
+.welcome-text {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  top: 45%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transform: scale(0.8);
+  text-shadow: 0px 0px 5px lightgreen;
+}
+ul.nav {
+  position: sticky;
+  top: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: darkslategray;
+}
+
+.nav > li {
+  background-color: darkslategray;
+  display: inline-block;
+  font-weight: 300;
+  text-align: right;
+  margin: auto;
+  color: aliceblue;
+}
+.nav > li > a {
+  color: aliceblue;
+  padding: 1em 2em;
+  display: inline-block;
+  text-decoration: none;
+  transition: 1s;
+}
+.nav > li > a:hover {
+  background: teal;
+}
+#about-me {
+  padding: 2em 0;
+}
+.identity,
+.desc,
+.skills {
+  text-align: center;
+}
+.desc,
+.skills {
+  text-align: center;
+  display: inline-block;
+  margin-top: 5em;
+}
+.text-isi {
+  font-size: 20px;
+  width: 80%;
+  max-width: 24em;
+  margin: 1em auto;
+  text-align: justify;
+}
+#my-portofolio {
+  text-align: center;
+}
+.img-portfolio {
+  max-width: 200px;
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+h2 {
+  text-align: center;
+  border: solid 10px darkslategray;
+  background-color: darkslategray;
+  color: white;
+  width: 200px;
+  margin: 20px auto;
+}
+.form-contact-me,
+.contact-info {
+  width: 100%;
+  text-align: center;
+}
+.inputan-contact {
+  width: 85%;
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+}
+.inputan-contact > label {
+  display: block;
+  font-size: 1.2em;
+}
+
+.inputan-contact > input,
+.inputan-contact > textarea {
+  width: 100%;
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+.contact-icon {
+  width: 50px;
+  margin: 2em;
+}
+.contact-desktop {
+  display: none;
+}
+.button {
+  text-align: center;
+  border: solid 10px darkslategray;
+  background-color: darkslategray;
+  color: white;
+  width: 200px;
+  margin: 20px auto;
+  transition-duration: 1s;
+}
+.button :hover {
+  text-align: center;
+  border: solid 10px darkslategray;
+  background-color: teal;
+  color: white;
+  width: 200px;
+  margin: 20px auto;
+  filter: brightness(50%);
+}
+footer {
+  background-color: darkslategray;
+  color: lightblue;
+  text-align: center;
+}
+.contact-info > div {
+  display: inline-block;
+}
+.contact-icon-bundler {
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .desc,
+  .skills {
+    width: 45%;
+    vertical-align: top;
+  }
+  .desktop {
+    display: block !important;
+  }
+  .form-contact-me,
+  .contact-info {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  ul.nav {
+    text-align: right;
+  }
+  #contact-me {
+    vertical-align: top;
+  }
+  li.nav-icon {
+    padding: 0;
+    width: 45px;
+    margin: 0.3em 1em;
+    float: left;
+  }
+  hr {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .nav-icon > img {
+    width: 100%;
+  }
+  .contact-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .contact-desktop {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .contact-icon-bundler {
+    display: inline-block;
+    min-width: 300px;
+    text-decoration: none;
+    color: black;
+  }
+  .contact-info > div {
+    display: block;
+  }
+}
